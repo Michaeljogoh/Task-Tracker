@@ -12,8 +12,7 @@ const AddTask = () => {
     const [modalOpen, setModalOpen] = useState<boolean>(false);
     const[taskValue, setTaskValue] = useState<string>("");
     
-
-
+    // Add new task 
     const handleSubmitNewTask: FormEventHandler<HTMLFormElement> = async (e) =>{
         e.preventDefault();
          
@@ -29,7 +28,7 @@ const AddTask = () => {
 
   return (
     <div>
-        <button onClick={() => setModalOpen(true)} className="btn btn-success w-full text-white" >
+        <button onClick={() => setModalOpen(true)} className="btn btn-success w-full mb-[-600px] text-white" >
             Add New Task 
             <AiOutlinePlus className="ml-2" size={18}  />
         </button>
