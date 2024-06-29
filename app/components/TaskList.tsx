@@ -1,4 +1,5 @@
 import { ITask } from "@/types/tasks"
+import Tasks from "./Tasks"
 
 interface TaskListProps {
     tasks:ITask[]
@@ -8,28 +9,18 @@ interface TaskListProps {
 
 const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
   return (
-<div className="overflow-x-auto">
-  <table className="table">
+<div className="overflow-auto">
+  <table className="table w-full">
 
   <thead >
   <tr>
-  <th>Id</th>
-  <th>Text</th>
+  <th>Tasks</th>
+  <th>Date</th>
  </tr> 
  </thead>
-    {tasks.map((task, index) =>{
-        return(
-             <>   
-            <tbody key={index}>
-            <tr>
-                <td>{task.id}</td>
-                <td>{task.text}</td>
-            </tr>
-        
-         </tbody>
-    </>
-        )
-    })}
+ <tbody >
+    {tasks.map((task) => <Tasks key={task.id} task={task}  />)}
+</tbody>
   </table>
 
 </div>
