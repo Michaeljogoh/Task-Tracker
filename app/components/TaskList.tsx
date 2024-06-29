@@ -11,11 +11,10 @@ const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
   return (
 <div className="overflow-auto">
   <table className="table w-full">
-
-  <thead >
+  <thead className="bg-slate-200 " >
   <tr>
-  <th>Tasks</th>
-  <th>Date</th>
+  <th className="text-black">Tasks</th>
+  <th className="text-black">Actions</th>
  </tr> 
  </thead>
  <tbody >
