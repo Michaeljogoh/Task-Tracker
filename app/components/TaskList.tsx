@@ -1,4 +1,10 @@
-import { ITask } from "@/types/tasks"
+"use client"
+
+import { ITask } from "@/types/tasks";
+import Tasks from "./Tasks";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 interface TaskListProps {
     tasks:ITask[]
@@ -7,29 +13,28 @@ interface TaskListProps {
 
 
 const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
-  return (
-<div className="overflow-x-auto">
-  <table className="table">
+   const [search, setSearch] = useState<string>('');
+    const [list, setList] = useState<ITask[]>(tasks);
+    
+  const filteredList = list.filter((item) =>
+    item.text.toLocaleLowerCase().includes(search.toLowerCase())
+);
 
-  <thead >
+  
+  return (
+  <div className="overflow-auto ">
+    {/* search */}
+  <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search..." className="input input-bordered rounded-none mt-[-0.1px]   w-full" />
+  <table className="table table-zebra w-full">
+  <thead className="bg-[#f2f2f2] " >
   <tr>
-  <th>Id</th>
-  <th>Text</th>
+  <th className="text-black">Tasks</th>
+  <th className="text-black">Actions</th>
  </tr> 
  </thead>
-    {tasks.map((task, index) =>{
-        return(
-             <>   
-            <tbody key={index}>
-            <tr>
-                <td>{task.id}</td>
-                <td>{task.text}</td>
-            </tr>
-        
-         </tbody>
-    </>
-        )
-    })}
+ <tbody >
+  { filteredList.map((task) => <Tasks key={task.id} task={task}  />)}
+</tbody>
   </table>
 
 </div>
