@@ -3,7 +3,7 @@
 import { ITask } from "@/types/tasks";
 import Tasks from "./Tasks";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+
 
 
 interface TaskListProps {
@@ -14,12 +14,6 @@ interface TaskListProps {
 
 const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
    const [search, setSearch] = useState<string>('');
-    const [list, setList] = useState<ITask[]>(tasks);
-    
-  const filteredList = list.filter((item) =>
-    item.text.toLocaleLowerCase().includes(search.toLowerCase())
-);
-
   
   return (
   <div className="overflow-auto ">
@@ -33,7 +27,8 @@ const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
  </tr> 
  </thead>
  <tbody >
-  { filteredList.map((task) => <Tasks key={task.id} task={task}  />)}
+  {tasks.filter((item) => item.text.toLocaleLowerCase().includes(search.toLowerCase())).map((task) => 
+  <Tasks key={task.id} task={task}/>)}
 </tbody>
   </table>
 

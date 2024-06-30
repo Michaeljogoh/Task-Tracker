@@ -13,7 +13,7 @@ interface TaskProps {
 }
 
 const Tasks:React.FC<TaskProps> = ({ task }) => {
-  const router = useRouter()
+  
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
   const [openModalDelete, setOpenModalDelete] = useState<boolean>(false);
   const [taskEdit, setTaskEdit] = useState(task.text);
@@ -27,20 +27,21 @@ const Tasks:React.FC<TaskProps> = ({ task }) => {
     })
 
     setOpenModalEdit(false);
-    router.refresh()
+    window.location.reload()
+   
   }
 
   // delete function
   const handleSubmitDelete = async (id: string) =>{
     await deleteTask(id);
     setOpenModalDelete(false);
-    router.refresh()
+    window.location.reload();
     
   }
 
 
   return (
-    <tr key={task.id}>
+    <tr key={task.id} role="tablelist">
     <td className="w-full">{task.text}</td>
     <td className="flex gap-5">
       {/* Edit Task */}
