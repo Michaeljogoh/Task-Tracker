@@ -1,4 +1,5 @@
 import { ITask } from "./types/tasks";
+// import fetch from "node-fetch";
 
 const baseUrl = "http://localhost:3001";
 
@@ -25,7 +26,7 @@ const baseUrl = "http://localhost:3001";
 //  Update tasks
 
 export const editTask = async (task : ITask): Promise<ITask> => {
-   const res = await fetch(`${baseUrl}/tasks/${task.id}`,
+   const res =  await fetch(`${baseUrl}/tasks/${task.id}`,
        {method:'PUT',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(task)
