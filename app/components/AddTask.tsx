@@ -30,7 +30,6 @@ const AddTask = () => {
 
   return (
     <div role="dialog">
-        <div>Task</div>
         <button onClick={() => setModalOpen(true)} className="btn btn-success w-full mb-[-400px] text-white" >
             Add New Task 
             <AiOutlinePlus className="ml-2" size={18}  />

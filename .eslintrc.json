@@ -4,5 +4,17 @@
      "plugin: testing-library/react",
      "plugin: jest-dom/recommended "
     
-    ] 
+    ],
+    "rules": { 
+      "rules":{
+        "react/no-unescaped-entities": 0 ,
+        "react/no-unescaped-utilities":"off",
+        "@typescript-eslint/quotes":"off",
+        "quotes":[0],
+        "avoidEscape":0,
+        "allowTemplateLiterals":0,
+        "no-useless-escape": 0
+      }
+    }
+
 }
