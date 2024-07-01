@@ -13,12 +13,23 @@ pnpm dev
 # or
 bun dev
 ```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Michaeljogoh/Task-Tracker.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Create your .env file in `<root>`
+  
+  
+4. Enter your  API_URL in `.env`
+   ```js
+   NEXT_PUBLIC_API_URL = "https://task-track-json-server.vercel.app"';
+  
 
 ## Learn More
 
@@ -30,7 +41,25 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
+ 
+Next.js Application deployed on vercel. [https://task-track-json-server.vercel.app/]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
