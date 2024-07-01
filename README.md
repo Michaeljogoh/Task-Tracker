@@ -42,7 +42,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
  
-Next.js Application deployed on vercel. [https://task-track-json-server.vercel.app/]
+Next.js Application deployed on vercel. (https://task-track-json-server.vercel.app/)
 
 
 
