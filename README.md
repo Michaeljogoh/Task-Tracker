@@ -1,17 +1,5 @@
 Task tracker is an nteractive web application that allows users to view, add, edit, and delete items from a list.
 
-### Built With
-
-This are the list of frameworks/libraries used to bootstrap this project.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Typescript][Typescript]][Laravel-url]
-* [![Taliwind][Tailwind css]][Vue-url]
-* [![Json-Server][Json-Server]][Angular-url]
-* [![Jest][Jest.io]][Svelte-url]
-
-
 ## Getting Started
 
 First, run the development server:
