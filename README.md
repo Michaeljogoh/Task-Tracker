@@ -42,7 +42,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
  
-Next.js Application deployed on vercel. (https://task-track-json-server.vercel.app/)
+Next.js Application deployed on vercel. [https://task-track-json-server.vercel.app/](https://task-track-json-server.vercel.app/)
 
 
 
@@ -52,14 +52,12 @@ Next.js Application deployed on vercel. (https://task-track-json-server.vercel.a
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
+* [Json-server](https://www.npmjs.com/package/json-server)
+* [Jest](https://jestjs.io/)
 * [React Icons](https://react-icons.github.io/react-icons/search)
+* [Tailwind Css](https://tailwindcss.com/)
+* [Typescript](https://www.typescriptlang.org/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
