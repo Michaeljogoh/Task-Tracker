@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### Built With
+
+This are the list of frameworks/libraries used to bootstrap this project.
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Typescript][Typescript]][Laravel-url]
+* [![Taliwind][Tailwind css]][Vue-url]
+* [![Json-Server][Json-Server]][Angular-url]
+* [![Jest][Jest.io]][Svelte-url]
+
+
 ## Getting Started
 
 First, run the development server:
