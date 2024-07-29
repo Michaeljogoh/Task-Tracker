@@ -49,8 +49,6 @@ Next.js Application deployed on vercel. [https://task-track-json-server.vercel.a
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Choose an Open Source License](https://choosealicense.com)
 * [Json-server](https://www.npmjs.com/package/json-server)
 * [Jest](https://jestjs.io/)
